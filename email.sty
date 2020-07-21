@@ -1,0 +1,6 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{email}[2020/07/21 Email command]
+
+\RequirePackage{hyperref}
+\RequirePackage{xcolor}
+\newcommand\email[1]{\textcolor{blue}{\texttt{\href{mailto:#1}{#1}}}}
