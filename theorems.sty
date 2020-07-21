@@ -1,0 +1,11 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{theorems}[2020/07/21 Provides mathematical definitions, theorems, remarks, ...]
+
+\RequirePackage{amsthm}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\renewcommand\qedsymbol{$\blacksquare$}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}

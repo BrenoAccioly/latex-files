@@ -1,0 +1,13 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{secondpage}[2020/07/21 Provides a second-page environment]
+
+\newenvironment{secondpage}{
+    \clearpage\null\vfill
+    \thispagestyle{empty}
+    \begin{minipage}[b]{0.9\textwidth}
+        \footnotesize\raggedright
+        \setlength{\parskip}{0.5\baselineskip}
+}{
+    \end{minipage}
+    \vspace*{2\baselineskip}
+}
